@@ -27,7 +27,7 @@ For loops:
 - allow iterating over two values instead of just 1. `for let i, v <- [2, 3, 5, 7] {}` would have `i` iterate over the keys, (0, 1, 2, 3) and `v` iterate over the values (2, 3, 5, 7).
 
 Operator overloading:
-- most operators should be overloadable, using special method names.
+- [most operators should be overloadable, using special method names](operator-overloading.md).
 
 Libraries:
 - [math library](std-math.md) (`math`), including things like `exp`, `sin`, `sqrt`, etc.
