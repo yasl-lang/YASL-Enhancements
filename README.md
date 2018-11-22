@@ -30,7 +30,7 @@ Operator overloading:
 - most operators should be overloadable, using special method names.
 
 Libraries:
-- math library (`math`), including things like `exp`, `sin`, `sqrt`, etc.
+- [math library](std-math.md) (`math`), including things like `exp`, `sin`, `sqrt`, etc.
 - UTF8 library (`utf8`), including string functions on utf8 strings.
 - I/O library (`io`), including file I/O and stdin, stdout, stderr.
 - coroutine library (`coroutine`), for concurrency.
