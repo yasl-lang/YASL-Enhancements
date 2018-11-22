@@ -32,7 +32,7 @@ Operator overloading:
 Libraries:
 - [math library](std-math.md) (`math`), including things like `exp`, `sin`, `sqrt`, etc.
 - UTF8 library (`utf8`), including string functions on utf8 strings.
-- I/O library (`io`), including file I/O and stdin, stdout, stderr.
+- [I/O library](std-io.md) (`io`), including file I/O and stdin, stdout, stderr.
 - coroutine library (`coroutine`), for concurrency.
 - collections library (`collection`), including collections such as `set`, and typed arrays.
 - regex library (`re`). Something like PCRE is likely too big for usage in the standard library.
