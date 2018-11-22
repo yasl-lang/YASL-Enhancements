@@ -49,7 +49,7 @@ Comprehensions:
 - If iterating over multiple values is allowed, comprehensions should also support this.
 
 Constants and variables:
-- `x := 10` to declare a variable (instead of `let x = 10`). `const x := 10` for consistency with variable declarations. (`let x := 10` would also be possible for constants.)
+- `x := 10` to declare a variable (instead of `let x = 10`). `const x := 10` (instead of `const x = 10`) for consistency with variable declarations.
 
 Generators:
 - `fn* gen(a) { /* body */ }` to declare a generator (compare with notation for function declarations).
