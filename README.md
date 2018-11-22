@@ -6,7 +6,7 @@ Possible future features:
 Strings:
 - interpolated strings, using `"x is #x"` syntax.
 - raw strings, using `` `this is raw` `` syntax.
-- escapes in regular strings, using `'this is a newline: \n'` syntax.
+- [escapes in regular strings](string-escapes.md), using `'this is a newline: \n'` syntax.
 - lexographical ordering on strings, using `<`.
 
 Lists:
