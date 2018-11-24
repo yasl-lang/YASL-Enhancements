@@ -1,7 +1,7 @@
 # String Escapes
 Strings should support the following escapes sequences:
 
-- `\a': bell
+- `\a`: bell
 - `\b`: backspace
 - `\f`: formfeed
 - `\n`: newline
