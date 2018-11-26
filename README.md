@@ -10,7 +10,7 @@ Strings:
 - lexographical ordering on strings, using `<`.
 
 Numbers:
-- allow underscores in numeric literals (these are simply ignored).
+- allow underscores in numeric literals (these are simply ignored). Not allow at start of number or directly after decimal place. e.g. (10_000, 0x_10)
 
 Lists:
 - method to sort lists in-place
