@@ -9,6 +9,9 @@ Strings:
 - [escapes in regular strings](string-escapes.md), using `'this is a newline: \n'` syntax.
 - lexographical ordering on strings, using `<`.
 
+Numbers:
+- allow underscores in numeric literals (these are simply ignored).
+
 Lists:
 - method to sort lists in-place
 - `tostr` and printing should show contents instead of memory address.
