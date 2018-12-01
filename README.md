@@ -11,6 +11,7 @@ Strings:
 
 Numbers:
 - [allow underscores in numeric literals](underscores-in-numeric-literals.md) (these are simply ignored). Not allowed at start of number or directly after decimal place. e.g. (10_000, 0x_10)
+- Add exponential notation for floats. e.g. 1e100
 
 Lists:
 - method to sort lists in-place
