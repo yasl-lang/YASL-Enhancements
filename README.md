@@ -8,6 +8,8 @@ Strings:
 - raw strings, using `` `this is raw` `` syntax.
 - [escapes in regular strings](string-escapes.md), using `'this is a newline: \n'` syntax.
 - lexographical ordering on strings, using `<`.
+- make strings iterable (iterating over each 'character').
+- add string slicing.
 
 Numbers:
 - [allow underscores in numeric literals](underscores-in-numeric-literals.md) (these are simply ignored). Not allowed at start of number or directly after decimal place. e.g. (10_000, 0x_10)
@@ -16,6 +18,7 @@ Numbers:
 Lists:
 - method to sort lists in-place
 - `tostr` and printing should show contents instead of memory address.
+- add list slicing.
 
 Tables:
 - `tostr` and printing should show contents instead of memory address.'
