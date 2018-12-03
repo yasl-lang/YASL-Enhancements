@@ -3,6 +3,10 @@ This repo keeps track of potential and planned features for YASL, to avoid clutt
 
 Possible future features:
 
+Naming:
+- rename numeric types to remove size (e.g. `int` instead of `int64`).
+- rename conversion methods to remove the `to` at the start (e.g. `x->str()` instead of `x->tostr()`).
+
 Strings:
 - interpolated strings, using `"x is #x"` syntax.
 - raw strings, using `` `this is raw` `` syntax.
