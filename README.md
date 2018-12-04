@@ -6,7 +6,7 @@ Possible future features:
 Naming:
 - rename numeric types to remove size (e.g. `int` instead of `int64`).
 - rename conversion methods to remove the `to` at the start (e.g. `x->str()` instead of `x->tostr()`).
-- ignore whether an identifier is a keyword directly after a `.` or `->`. e.g. allow `x->for(f)`, even though `for` is built-in.
+- ignore whether an identifier is a keyword directly after a `.` or `->`. e.g. allow `x->for(f)`, even though `for` is a keyword.
 
 Strings:
 - interpolated strings, using `"x is #x"` syntax.
