@@ -6,6 +6,7 @@ Possible future features:
 Naming:
 - rename numeric types to remove size (e.g. `int` instead of `int64`).
 - rename conversion methods to remove the `to` at the start (e.g. `x->str()` instead of `x->tostr()`).
+- ignore whether an identifier is a keyword directly after a `.` or `->`. e.g. allow `x->for(f)`, even though `for` is built-in.
 
 Strings:
 - interpolated strings, using `"x is #x"` syntax.
@@ -15,6 +16,7 @@ Strings:
 - make strings iterable (iterating over each 'character').
 - add string slicing.
 - add string metatable.
+- treat `.x` as `'x'` for any identifier `x`. This is to allow things like `x = { .a: 10, .b: 11 }`.
 
 Numbers:
 - [allow underscores in numeric literals](underscores-in-numeric-literals.md) (these are simply ignored). Not allowed at start of number or directly after decimal place. e.g. (10_000, 0x_10)
