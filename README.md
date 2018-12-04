@@ -1,4 +1,4 @@
-# YASL-Enhancements
+# YASL Enhancements
 This repo keeps track of potential and planned features for YASL, to avoid cluttering the main repo.
 
 Possible future features:
@@ -27,6 +27,9 @@ Lists:
 Tables:
 - `tostr` and printing should show contents instead of memory address.'
 - metatables, to allow lookups in a second table if first look-up fails.
+
+Userdata:
+- metatables
 
 Modules:
 - `require 'path'` should import the contents of `path` and put them into a table. (Tables can be used instead of another module system.)
