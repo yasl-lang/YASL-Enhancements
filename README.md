@@ -14,6 +14,7 @@ Strings:
 - lexographical ordering on strings, using `<`.
 - make strings iterable (iterating over each 'character').
 - add string slicing.
+- add string metatable.
 
 Numbers:
 - [allow underscores in numeric literals](underscores-in-numeric-literals.md) (these are simply ignored). Not allowed at start of number or directly after decimal place. e.g. (10_000, 0x_10)
