@@ -48,7 +48,7 @@ Libraries:
 - UTF8 library (`utf8`), including string functions on utf8 strings.
 - [I/O library](std-io.md) (`io`), including file I/O and stdin, stdout, stderr.
 - coroutine library (`coroutine`), for concurrency.
-- collections library (`collection`), including collections such as `set`, `multiset`, and typed arrays.
+- [collections library](std-collections.md) (`collection`), including collections such as `set`, `multiset`, and typed arrays.
 - regex library (`re`). Something like PCRE is likely too big for usage in the standard library.
 
 Functions:
