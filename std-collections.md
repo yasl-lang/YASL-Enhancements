@@ -9,6 +9,9 @@ The following collections will be included:
 
 Some of the following may also be included:
 
+- `frozen_set`
+- `frozen_table`
+- `frozen_multiset`
 - `ordered_table`
 - `ordered_set`
 - `ordered_multiset`
