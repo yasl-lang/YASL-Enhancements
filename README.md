@@ -10,11 +10,11 @@ Naming:
 
 Strings:
 - interpolated strings, using `"x is #x"` syntax.
-- raw strings, using `` `this is raw` `` syntax.
-- [escapes in regular strings](string-escapes.md), using `'this is a newline: \n'` syntax.
-- lexographical ordering on strings, using `<`.
+- ~raw strings, using `` `this is raw` `` syntax.~ (added in v0.2.0)
+- ~[escapes in regular strings](string-escapes.md), using `'this is a newline: \n'` syntax.~ (added in v0.2.0)
+- ~lexographical ordering on strings, using `<`.~ (added in v0.2.0)
 - make strings iterable (iterating over each 'character').
-- add string slicing.
+- ~add string slicing.~ (added in v0.2.0)
 - add string metatable.
 - treat `.x` as `'x'` for any identifier `x`. This is to allow things like `x = { .a: 10, .b: 11 }`.
 
