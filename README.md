@@ -24,6 +24,7 @@ Numbers:
 
 Lists:
 - method to sort lists in-place
+- method to join list elements into a single string.
 - `tostr` and printing should show contents instead of memory address.
 - add list slicing.
 
