@@ -17,6 +17,7 @@ Strings:
 - ~add string slicing.~ (added in v0.2.0)
 - add string metatable.
 - treat `.x` as `'x'` for any identifier `x`. This is to allow things like `x = { .a: 10, .b: 11 }`.
+- string `repeat` method (e.g. `'abc'->repeat(3)` is the same as `'abcabcabc'`).
 
 Numbers:
 - [allow underscores in numeric literals](underscores-in-numeric-literals.md) (these are simply ignored). Not allowed at start of number or directly after decimal place. e.g. (10_000, 0x_10)
