@@ -6,17 +6,17 @@ Possible future features:
 Naming:
 - rename numeric types to remove size (e.g. `int` instead of `int64`).
 - rename conversion methods to remove the `to` at the start (e.g. `x->str()` instead of `x->tostr()`).
-- ignore whether an identifier is a keyword directly after a `.` or `->`. e.g. allow `x->for(f)`, even though `for` is a keyword.
+- ~ignore whether an identifier is a keyword directly after a `.` or `->`. e.g. allow `x->for(f)`, even though `for` is a keyword.~ (added in v0.2.1)
 
 Strings:
-- interpolated strings, using `"x is #x"` syntax.
+- ~interpolated strings, using `"x is #x"` syntax.~ (added in v0.2.1)
 - ~raw strings, using `` `this is raw` `` syntax.~ (added in v0.2.0)
 - ~[escapes in regular strings](string-escapes.md), using `'this is a newline: \n'` syntax.~ (added in v0.2.0)
 - ~lexographical ordering on strings, using `<`.~ (added in v0.2.0)
 - make strings iterable (iterating over each 'character').
 - ~add string slicing.~ (added in v0.2.0)
 - add string metatable.
-- treat `.x` as `'x'` for any identifier `x`. This is to allow things like `x = { .a: 10, .b: 11 }`.
+- ~treat `.x` as `'x'` for any identifier `x`. This is to allow things like `x = { .a: 10, .b: 11 }`.~ (added v0.2.1)
 - string `repeat` method (e.g. `'abc'->repeat(3)` is the same as `'abcabcabc'`).
 
 Numbers:
