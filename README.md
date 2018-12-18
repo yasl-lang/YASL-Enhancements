@@ -70,6 +70,9 @@ Comprehensions:
 Constants and variables:
 - `x := 10` to declare a variable (instead of `let x = 10`). `const x := 10` (instead of `const x = 10`) for consistency with variable declarations.
 
+Loops:
+- Optional `else` clause, executed if the main loop _doesn't_ `break` out.
+
 Generators:
 - `fn* gen(a) { /* body */ }` to declare a generator (compare with notation for function declarations).
 - `-x for* let x <- ls` to declare a generator from an existing iterable (compare with notation for comprehensions).
