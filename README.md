@@ -78,3 +78,6 @@ Loops:
 Generators:
 - `fn* gen(a) { /* body */ }` to declare a generator (compare with notation for function declarations).
 - `-x for* let x <- ls` to declare a generator from an existing iterable (compare with notation for comprehensions).
+
+Internals:
+- Change object representation to simplify many actions (Table, List and UserData should use same representation internally (save for data store in `void *`.
