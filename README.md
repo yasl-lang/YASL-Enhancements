@@ -19,6 +19,7 @@ Strings:
 - ~treat `.x` as `'x'` for any identifier `x`. This is to allow things like `x = { .a: 10, .b: 11 }`.~ (added v0.2.1)
 - string `repeat` method (e.g. `'abc'->repeat(3)` is the same as `'abcabcabc'`).
 - string concatenation (and interpolation) should coerce other types to string.
+- other types of string literals somehow: `"AB CD EF 00 11"x` for string from hex, `"0011 0011"b` for string from binary, `"你好"u` for unicode, etc.
 
 Numbers:
 - [allow underscores in numeric literals](underscores-in-numeric-literals.md) (these are simply ignored). Not allowed at start of number or directly after decimal place. e.g. (10_000, 0x_10)
