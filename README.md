@@ -30,6 +30,7 @@ Lists:
 - method to join list elements into a single string.
 - `tostr` and printing should show contents instead of memory address.
 - add list slicing.
+- list concat with `+` (so that string concat always concatenates).
 
 Tables:
 - `tostr` and printing should show contents instead of memory address.'
