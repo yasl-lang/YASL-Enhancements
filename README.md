@@ -83,4 +83,4 @@ Generators:
 - `-x for* let x <- ls` to declare a generator from an existing iterable (compare with notation for comprehensions).
 
 Internals:
-- Change object representation to simplify many actions (Table, List and UserData should use same representation internally (save for data store in `void *`.
+- Change object representation to simplify many actions (Table, List and UserData should use same representation internally (save for data store in `void *`)).
