@@ -4,7 +4,7 @@ This repo keeps track of potential and planned features for YASL, to avoid clutt
 Possible future features:
 
 Naming:
-- rename numeric types to remove size (e.g. `int` instead of `int64`).
+- ~rename numeric types to remove size (e.g. `int` instead of `int64`).~ (added in v0.2.2)
 - rename conversion methods to remove the `to` at the start (e.g. `x->str()` instead of `x->tostr()`).
 - ~ignore whether an identifier is a keyword directly after a `.` or `->`. e.g. allow `x->for(f)`, even though `for` is a keyword.~ (added in v0.2.1)
 
@@ -69,18 +69,18 @@ Sequences:
 - "sequences" should be added to YASL. sequences live only on the stack. Trying to use a sequence in an expression will shrink or expand the sequence to the appropriate size. e.g. if `f()` returns `1, 2`, `x, y = f()` will use both values. `x = f()` will shrink `1, 2` to fit the context it is used in, to `1` in this case. `x, y, z = f()` would expand `1, 2` to the context it is used in, filling with `undef`, so `x` would get a value of 1, `y` a value of 2, and `z` a value of `undef`.
 
 Comprehensions:
-- comprehensions should be more general, returning a sequence. This would allow stuff like `max(x for let x <- ls if x > 0)`, and `set(x for let x <- ls)`.
+- comprehensions should be more general, returning a sequence. This would allow stuff like `max(x for x <- ls if x > 0)`, and `set(x for x <- ls)`.
 - If iterating over multiple values is allowed, comprehensions should also support this.
 
 Constants and variables:
-- `x := 10` to declare a variable (instead of `let x = 10`). `const x := 10` (instead of `const x = 10`) for consistency with variable declarations.
+- ~`x := 10` to declare a variable (instead of `let x = 10`). `const x := 10` (instead of `const x = 10`) for consistency with variable declarations.~ (added in v0.2.2)
 
 Loops:
 - Optional `else` clause, executed if the main loop _doesn't_ `break` out.
 
 Generators:
 - `fn* gen(a) { /* body */ }` to declare a generator (compare with notation for function declarations).
-- `-x for* let x <- ls` to declare a generator from an existing iterable (compare with notation for comprehensions).
+- `-x for* x <- ls` to declare a generator from an existing iterable (compare with notation for comprehensions).
 
 Internals:
 - Change object representation to simplify many actions (Table, List and UserData should use same representation internally (save for data store in `void *`)).
