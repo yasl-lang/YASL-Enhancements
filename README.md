@@ -5,7 +5,7 @@ Possible future features:
 
 Naming:
 - ~rename numeric types to remove size (e.g. `int` instead of `int64`).~ (added in v0.2.2)
-- rename conversion methods to remove the `to` at the start (e.g. `x->str()` instead of `x->tostr()`).
+- ~rename conversion methods to remove the `to` at the start (e.g. `x->str()` instead of `x->tostr()`).~ (won't do)
 - ~ignore whether an identifier is a keyword directly after a `.` or `->`. e.g. allow `x->for(f)`, even though `for` is a keyword.~ (added in v0.2.1)
 
 Strings:
