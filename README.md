@@ -18,7 +18,7 @@ Strings:
 - add string metatable.
 - ~treat `.x` as `'x'` for any identifier `x`. This is to allow things like `x = { .a: 10, .b: 11 }`.~ (added v0.2.1)
 - string `repeat` method (e.g. `'abc'->repeat(3)` is the same as `'abcabcabc'`).
-- string concatenation (and interpolation) should coerce other types to string.
+- ~string concatenation (and interpolation) should coerce other types to string.~ (added in v0.3.0)
 - other types of string literals somehow: `"AB CD EF 00 11"x` for string from hex, `"0011 0011"b` for string from binary, `"你好"u` for unicode, etc.
 
 Numbers:
@@ -73,7 +73,7 @@ Comprehensions:
 - If iterating over multiple values is allowed, comprehensions should also support this.
 
 Constants and variables:
-- ~`x := 10` to declare a variable (instead of `let x = 10`). `const x := 10` (instead of `const x = 10`) for consistency with variable declarations.~ (added in v0.2.2)
+- ~`x := 10` to declare a variable (instead of `let x = 10`). `const x := 10` (instead of `const x = 10`) for consistency with variable declarations.~ (added in v0.2.2, `let` removed in v0.3.0)
 
 Loops:
 - Optional `else` clause, executed if the main loop _doesn't_ `break` out.
@@ -83,4 +83,4 @@ Generators:
 - `-x for* x <- ls` to declare a generator from an existing iterable (compare with notation for comprehensions).
 
 Internals:
-- Change object representation to simplify many actions (Table, List and UserData should use same representation internally (save for data store in `void *`)).
+- ~Change object representation to simplify many actions (Table, List and UserData should use same representation internally (save for data store in `void *`)).~ (updated in v0.3.0)
