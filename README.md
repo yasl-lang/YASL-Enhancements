@@ -17,7 +17,7 @@ Strings:
 - ~add string slicing.~ (added in v0.2.0)
 - add string metatable.
 - ~treat `.x` as `'x'` for any identifier `x`. This is to allow things like `x = { .a: 10, .b: 11 }`.~ (added v0.2.1)
-- string `repeat` method (e.g. `'abc'->repeat(3)` is the same as `'abcabcabc'`).
+- ~string `repeat` method (e.g. `'abc'->repeat(3)` is the same as `'abcabcabc'`).~ (added in v0.3.0)
 - ~string concatenation (and interpolation) should coerce other types to string.~ (added in v0.3.0)
 - other types of string literals somehow: `"AB CD EF 00 11"x` for string from hex, `"0011 0011"b` for string from binary, `"你好"u` for unicode, etc.
 
