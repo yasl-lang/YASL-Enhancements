@@ -3,22 +3,9 @@ This repo keeps track of potential and planned features for YASL, to avoid clutt
 
 Possible future features:
 
-Naming:
-- ~rename numeric types to remove size (e.g. `int` instead of `int64`).~ (added in v0.2.2)
-- ~rename conversion methods to remove the `to` at the start (e.g. `x->str()` instead of `x->tostr()`).~ (won't do)
-- ~ignore whether an identifier is a keyword directly after a `.` or `->`. e.g. allow `x->for(f)`, even though `for` is a keyword.~ (added in v0.2.1)
-
 Strings:
-- ~interpolated strings, using `"x is #x"` syntax.~ (added in v0.2.1)
-- ~raw strings, using `` `this is raw` `` syntax.~ (added in v0.2.0)
-- ~[escapes in regular strings](string-escapes.md), using `'this is a newline: \n'` syntax.~ (added in v0.2.0)
-- ~lexographical ordering on strings, using `<`.~ (added in v0.2.0)
 - make strings iterable (iterating over each 'character').
-- ~add string slicing.~ (added in v0.2.0)
 - add string metatable.
-- ~treat `.x` as `'x'` for any identifier `x`. This is to allow things like `x = { .a: 10, .b: 11 }`.~ (added v0.2.1)
-- string `repeat` method (e.g. `'abc'->repeat(3)` is the same as `'abcabcabc'`).
-- string concatenation (and interpolation) should coerce other types to string.
 - other types of string literals somehow: `"AB CD EF 00 11"x` for string from hex, `"0011 0011"b` for string from binary, `"你好"u` for unicode, etc.
 
 Numbers:
@@ -29,7 +16,6 @@ Lists:
 - method to sort lists in-place
 - method to join list elements into a single string.
 - `tostr` and printing should show contents instead of memory address.
-- add list slicing.
 - list concat with `+` (so that string concat always concatenates).
 
 Tables:
@@ -64,6 +50,7 @@ Functions:
 - allow unnamed functions using `fn(a, b) { return a + b }`.
 - `const` functions.
 - `const` function parameters.
+- allow `fn f.name(a, b, c) { .... }` style declarations (for tables).
 
 Sequences:
 - "sequences" should be added to YASL. sequences live only on the stack. Trying to use a sequence in an expression will shrink or expand the sequence to the appropriate size. e.g. if `f()` returns `1, 2`, `x, y = f()` will use both values. `x = f()` will shrink `1, 2` to fit the context it is used in, to `1` in this case. `x, y, z = f()` would expand `1, 2` to the context it is used in, filling with `undef`, so `x` would get a value of 1, `y` a value of 2, and `z` a value of `undef`.
@@ -72,15 +59,9 @@ Comprehensions:
 - comprehensions should be more general, returning a sequence. This would allow stuff like `max(x for x <- ls if x > 0)`, and `set(x for x <- ls)`.
 - If iterating over multiple values is allowed, comprehensions should also support this.
 
-Constants and variables:
-- ~`x := 10` to declare a variable (instead of `let x = 10`). `const x := 10` (instead of `const x = 10`) for consistency with variable declarations.~ (added in v0.2.2)
-
 Loops:
 - Optional `else` clause, executed if the main loop _doesn't_ `break` out.
 
 Generators:
 - `fn* gen(a) { /* body */ }` to declare a generator (compare with notation for function declarations).
 - `-x for* x <- ls` to declare a generator from an existing iterable (compare with notation for comprehensions).
-
-Internals:
-- Change object representation to simplify many actions (Table, List and UserData should use same representation internally (save for data store in `void *`)).
