@@ -29,7 +29,7 @@ Lists:
 - method to sort lists in-place
 - method to join list elements into a single string.
 - `tostr` and printing should show contents instead of memory address.
-- add list slicing.
+- ~add list slicing.~ (added in v0.3.0)
 - list concat with `+` (so that string concat always concatenates).
 
 Tables:
