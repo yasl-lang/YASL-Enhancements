@@ -64,6 +64,7 @@ Functions:
 - allow unnamed functions using `fn(a, b) { return a + b }`.
 - `const` functions.
 - `const` function parameters.
+- allow `fn f.name(a, b, c) { .... }` style declarations (for tables).
 
 Sequences:
 - "sequences" should be added to YASL. sequences live only on the stack. Trying to use a sequence in an expression will shrink or expand the sequence to the appropriate size. e.g. if `f()` returns `1, 2`, `x, y = f()` will use both values. `x = f()` will shrink `1, 2` to fit the context it is used in, to `1` in this case. `x, y, z = f()` would expand `1, 2` to the context it is used in, filling with `undef`, so `x` would get a value of 1, `y` a value of 2, and `z` a value of `undef`.
