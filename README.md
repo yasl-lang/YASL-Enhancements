@@ -4,7 +4,7 @@ This repo keeps track of potential and planned features for YASL, to avoid clutt
 Possible future features:
 
 Strings:
-- make strings iterable (iterating over each 'character').
+- ~make strings iterable (iterating over each 'character').~ (added in v0.3.0)
 - add string metatable.
 - other types of string literals somehow: `"AB CD EF 00 11"x` for string from hex, `"0011 0011"b` for string from binary, `"你好"u` for unicode, etc.
 
