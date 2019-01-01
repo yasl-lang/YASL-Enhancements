@@ -16,15 +16,15 @@ Numbers:
 
 Lists:
 - method to sort lists in-place
-- method to join list elements into a single string.
-- `tostr` and printing should show contents instead of memory address.
+- ~method to join list elements into a single string.~ (added in v0.3.1)
+- ~`tostr` and printing should show contents instead of memory address.~ (added in v0.3.1)
 - list concat with `+` (so that string concat always concatenates).
-- `list.clear` method.
+- ~`list.clear` method.~ (added in v0.3.1)
 
 Tables:
-- `tostr` and printing should show contents instead of memory address.'
+- ~`tostr` and printing should show contents instead of memory address.'~ (added in v0.3.1)
 - metatables, to allow lookups in a second table if first look-up fails.
-- `table.clear` method.
+- ~`table.clear` method.~ (added in v0.3.1)
 
 Userdata:
 - metatables
