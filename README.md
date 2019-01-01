@@ -19,6 +19,7 @@ Lists:
 - ~method to join list elements into a single string.~ (added in v0.3.1)
 - ~`tostr` and printing should show contents instead of memory address.~ (added in v0.3.1)
 - list concat with `+` (so that string concat always concatenates).
+- list metatable.
 - ~`list.clear` method.~ (added in v0.3.1)
 
 Tables:
