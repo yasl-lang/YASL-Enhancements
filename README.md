@@ -9,6 +9,8 @@ Strings:
 - add `string.reverse` method.
 - add string metatable.
 - other types of string literals somehow: `"AB CD EF 00 11"x` for string from hex, `"0011 0011"b` for string from binary, `"你好"u` for unicode, etc.
+- add quick opcodes for builtin method names to reduce bytecode size and speed up interpreting.
+- implement string interning with all literals.
 
 Numbers:
 - [allow underscores in numeric literals](underscores-in-numeric-literals.md) (these are simply ignored). Not allowed at start of number or directly after decimal place. e.g. (10_000, 0x_10)
@@ -66,6 +68,9 @@ Comprehensions:
 
 Loops:
 - Optional `else` clause, executed if the main loop _doesn't_ `break` out.
+
+Variables:
+- Allow multiple assignments of the form `x, y, z := 1, 2, 3`. Allow `const x, y, z := 1, 2, 3` as well, which makes all of them `const`.
 
 Generators:
 - `fn* gen(a) { /* body */ }` to declare a generator (compare with notation for function declarations).
