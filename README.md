@@ -55,8 +55,8 @@ Libraries:
 Functions:
 - Implement full lexical closures.
 - allow unnamed functions using `fn(a, b) { return a + b }`.
-- `const` functions.
-- `const` function parameters.
+- ~`const` functions.~ (added in v0.3.3)
+- ~`const` function parameters.~ (added in v0.3.3)
 - allow `fn f.name(a, b, c) { .... }` style declarations (for tables).
 
 Sequences:
