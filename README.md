@@ -11,6 +11,7 @@ Strings:
 - other types of string literals somehow: `"AB CD EF 00 11"x` for string from hex, `"0011 0011"b` for string from binary, `"你好"u` for unicode, etc.
 - add quick opcodes for builtin method names to reduce bytecode size and speed up interpreting.
 - implement string interning with all literals.
+- `s[a:b]` notation for slice.
 
 Numbers:
 - [allow underscores in numeric literals](underscores-in-numeric-literals.md) (these are simply ignored). Not allowed at start of number or directly after decimal place. e.g. (10_000, 0x_10)
@@ -23,6 +24,7 @@ Lists:
 - list concat with `+` (so that string concat always concatenates).
 - list metatable.
 - ~`list.clear` method.~ (added in v0.3.1)
+- `l[a:b]` notation for slice.
 
 Tables:
 - ~`tostr` and printing should show contents instead of memory address.'~ (added in v0.3.1)
