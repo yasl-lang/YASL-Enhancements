@@ -16,5 +16,6 @@ The following are allowed:
 The following are not:
 * _0x10
 * _0b10
+* 0_x10
 * _10
 * 1._9
