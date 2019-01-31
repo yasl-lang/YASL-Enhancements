@@ -1,6 +1,6 @@
 # Exponential Notation for Floats
 
-Floating point literals would match the following regex:
+Floating point literals using exponential notation would match the following regex:
 
 `[0-9]+(\.[0-9]+)?[Ee][+-]?[0-9]+`
 
