@@ -5,11 +5,11 @@ Possible future features:
 
 Strings:
 - ~make strings iterable (iterating over each 'character').~ (added in v0.3.0)
-- add `string.count` method.
+- ~add `string.count` method.~ (added in v0.3.4)
 - add `string.reverse` method.
 - add string metatable.
 - other types of string literals somehow: `"AB CD EF 00 11"x` for string from hex, `"0011 0011"b` for string from binary, `"你好"u` for unicode, etc.
-- add quick opcodes for builtin method names to reduce bytecode size and speed up interpreting.
+- ~add quick opcodes for builtin method names to reduce bytecode size and speed up interpreting.~ (added)
 - implement string interning with all literals.
 - `s[a:b]` notation for slice.
 - rename `string.repeat` to `string.rep`. [BREAKING]
@@ -20,7 +20,7 @@ Numbers:
 - Move `inf` and `nan` to `math` library. [BREAKING]
 
 Lists:
-- method to sort lists in-place
+- ~method to sort lists in-place~ (added in v0.3.4)
 - ~method to join list elements into a single string.~ (added in v0.3.1)
 - ~`tostr` and printing should show contents instead of memory address.~ (added in v0.3.1)
 - list concat with `+` (so that string concat always concatenates).
@@ -49,7 +49,7 @@ Operator overloading:
 - [most operators should be overloadable, using special method names](operator-overloading.md).
 
 Libraries:
-- [math library](std-math.md) (`math`), including things like `exp`, `sin`, `sqrt`, etc.
+- ~[math library](std-math.md) (`math`), including things like `exp`, `sin`, `sqrt`, etc.~ (added in v0.3.4)
 - UTF8 library (`utf8`), including string functions on utf8 strings.
 - [I/O library](std-io.md) (`io`), including file I/O and stdin, stdout, stderr.
 - coroutine library (`coroutine`), for concurrency.
