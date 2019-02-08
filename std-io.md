@@ -25,3 +25,5 @@ Closes `f`.
 ### io.seek(f, whence, offset)
 Sets the position in the file
 
+### io.stdin, io.stdout, io.stderr
+standard in, out and error
