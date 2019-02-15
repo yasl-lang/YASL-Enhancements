@@ -37,7 +37,7 @@ Userdata:
 - metatables
 
 Modules:
-- `require 'path'` should import the contents of `path` and put them into a table. (Tables can be used instead of another module system.)
+- `foo = require('bar.yasl')` should import the contents of `bar.yasl` and store them in a variable named `foo`. Details [here](modules.md).
 
 `in` operator:
 - check list and table containment. complement is `!in`.
