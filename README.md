@@ -13,11 +13,13 @@ Strings:
 - implement string interning with all literals.
 - `s[a:b]` notation for slice.
 - rename `string.repeat` to `string.rep`. [BREAKING]
+- change string concatenation to `a @ b` (from `a ~ b`). [BREAKING]
 
 Numbers:
 - [allow underscores in numeric literals](underscores-in-numeric-literals.md) (these are simply ignored). Not allowed at start of number or directly after decimal place. e.g. (10_000, 0x_10)
 - [Add exponential notation for floats](exponential-notation.md). e.g. 1e100
 - Move `inf` and `nan` to `math` library. [BREAKING]
+- add `int.toint` and `float.tofloat` (both do nothing, just for duck-typing).
 
 Lists:
 - ~method to sort lists in-place~ (added in v0.3.4)
@@ -75,7 +77,7 @@ Loops:
 - Optional `else` clause, executed if the main loop _doesn't_ `break` out.
 
 Variables:
-- Allow multiple assignments of the form `x, y, z := 1, 2, 3`. Allow `const x, y, z := 1, 2, 3` as well, which makes all of them `const`.
+- Allow multiple assignments of the form `x, y, z := 1, 2, 3`. Allow `const x, y, z := 1, 2, 3` as well, which makes the first of them `const`.
 
 Generators:
 - `fn* gen(a) { /* body */ }` to declare a generator (compare with notation for function declarations).
