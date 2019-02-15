@@ -62,6 +62,7 @@ Functions:
 - ~`const` functions.~ (added in v0.3.2)
 - ~`const` function parameters.~ (added in v0.3.2)
 - allow `fn f.name(a, b, c) { .... }` style declarations (for tables).
+- allow `expr string-literal` as a function call. e.g. `utf8'string'` would be the same as `utf8('string')`. `utf8'string'->toint()` would be the same as `utf8('string')->toint`. This would allow something similar to the string prefixes found in Python, without having to add too much to YASL.
 
 Sequences:
 - "sequences" should be added to YASL. sequences live only on the stack. Trying to use a sequence in an expression will shrink or expand the sequence to the appropriate size. e.g. if `f()` returns `1, 2`, `x, y = f()` will use both values. `x = f()` will shrink `1, 2` to fit the context it is used in, to `1` in this case. `x, y, z = f()` would expand `1, 2` to the context it is used in, filling with `undef`, so `x` would get a value of 1, `y` a value of 2, and `z` a value of `undef`.
