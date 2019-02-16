@@ -3,6 +3,9 @@ This repo keeps track of potential and planned features for YASL, to avoid clutt
 
 Possible future features:
 
+REPL:
+- add a REPL
+
 Strings:
 - ~make strings iterable (iterating over each 'character').~ (added in v0.3.0)
 - ~add `string.count` method.~ (added in v0.3.4)
