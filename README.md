@@ -16,10 +16,10 @@ Strings:
 - change string concatenation to `a @ b` (from `a ~ b`). [BREAKING]
 
 Numbers:
-- [allow underscores in numeric literals](underscores-in-numeric-literals.md) (these are simply ignored). Not allowed at start of number or directly after decimal place. e.g. (10_000, 0x_10)
+- ~[allow underscores in numeric literals](underscores-in-numeric-literals.md) (these are simply ignored). Not allowed at start of number or directly after decimal place. e.g. (10_000, 0x_10)~ (added in v0.3.5)
 - [Add exponential notation for floats](exponential-notation.md). e.g. 1e100
 - Move `inf` and `nan` to `math` library. [BREAKING]
-- add `int.toint` and `float.tofloat` (both do nothing, just for duck-typing).
+- ~add `int.toint` and `float.tofloat` (both do nothing, just for duck-typing).~ (added in v0.3.5)
 
 Lists:
 - ~method to sort lists in-place~ (added in v0.3.4)
