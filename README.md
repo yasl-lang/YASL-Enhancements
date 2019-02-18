@@ -4,15 +4,13 @@ This repo keeps track of potential and planned features for YASL, to avoid clutt
 Possible future features:
 
 REPL:
-- add a REPL
+- ~add a REPL~ (added in v0.3.6)
 
 Strings:
-- ~make strings iterable (iterating over each 'character').~ (added in v0.3.0)
 - ~add `string.count` method.~ (added in v0.3.4)
 - add `string.reverse` method.
 - add string metatable.
 - other types of string literals somehow: `"AB CD EF 00 11"x` for string from hex, `"0011 0011"b` for string from binary, `"你好"u` for unicode, etc.
-- ~add quick opcodes for builtin method names to reduce bytecode size and speed up interpreting.~ (added)
 - implement string interning with all literals.
 - `s[a:b]` notation for slice.
 - rename `string.repeat` to `string.rep`. [BREAKING]
@@ -26,17 +24,12 @@ Numbers:
 
 Lists:
 - ~method to sort lists in-place~ (added in v0.3.4)
-- ~method to join list elements into a single string.~ (added in v0.3.1)
-- ~`tostr` and printing should show contents instead of memory address.~ (added in v0.3.1)
 - list concat with `+` (so that string concat always concatenates).
 - list metatable.
-- ~`list.clear` method.~ (added in v0.3.1)
 - `l[a:b]` notation for slice.
 
 Tables:
-- ~`tostr` and printing should show contents instead of memory address.'~ (added in v0.3.1)
 - metatables, to allow lookups in a second table if first look-up fails.
-- ~`table.clear` method.~ (added in v0.3.1)
 
 Userdata:
 - metatables
@@ -64,8 +57,6 @@ Libraries:
 Functions:
 - Implement full lexical closures.
 - allow unnamed functions using `fn(a, b) { return a + b }`.
-- ~`const` functions.~ (added in v0.3.2)
-- ~`const` function parameters.~ (added in v0.3.2)
 - allow `fn f.name(a, b, c) { .... }` style declarations (for tables).
 - allow `expr string-literal` as a function call. e.g. `utf8'string'` would be the same as `utf8('string')`. `utf8'string'->toint()` would be the same as `utf8('string')->toint`. This would allow something similar to the string prefixes found in Python, without having to add too much to YASL.
 
