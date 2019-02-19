@@ -15,6 +15,7 @@ Strings:
 - `s[a:b]` notation for slice.
 - rename `string.repeat` to `string.rep`. [BREAKING]
 - change string concatenation to `a @ b` (from `a ~ b`). [BREAKING]
+- change `str.tofloat` to try parsing from int and coercing if parsing from float fails. [BREAKING]
 
 Numbers:
 - ~[allow underscores in numeric literals](underscores-in-numeric-literals.md) (these are simply ignored). Not allowed at start of number or directly after decimal place. e.g. (10_000, 0x_10)~ (added in v0.3.5)
