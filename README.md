@@ -22,6 +22,7 @@ Numbers:
 - [Add exponential notation for floats](exponential-notation.md). e.g. 1e100
 - Move `inf` and `nan` to `math` library. [BREAKING]
 - ~add `int.toint` and `float.tofloat` (both do nothing, just for duck-typing).~ (added in v0.3.5)
+- add "character literals". These would have type `int`, based on the character code given. examples would be `?a` for `0x61`, `?\n` for `0x0A`, or `??` for `0x3F` (all assuming we're using ASCII).
 
 Lists:
 - ~method to sort lists in-place~ (added in v0.3.4)
