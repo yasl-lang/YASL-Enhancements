@@ -3,11 +3,7 @@ This repo keeps track of potential and planned features for YASL, to avoid clutt
 
 Possible future features:
 
-REPL:
-- ~add a REPL~ (added in v0.3.6)
-
 Strings:
-- ~add `string.count` method.~ (added in v0.3.4)
 - add `string.reverse` method.
 - add string metatable.
 - other types of string literals somehow: `"AB CD EF 00 11"x` for string from hex, `"0011 0011"b` for string from binary, `"你好"u` for unicode, etc.
@@ -18,14 +14,11 @@ Strings:
 - change `str.tofloat` to try parsing from int and coercing if parsing from float fails. [BREAKING]
 
 Numbers:
-- ~[allow underscores in numeric literals](underscores-in-numeric-literals.md) (these are simply ignored). Not allowed at start of number or directly after decimal place. e.g. (10_000, 0x_10)~ (added in v0.3.5)
 - [Add exponential notation for floats](exponential-notation.md). e.g. 1e100
 - Move `inf` and `nan` to `math` library. [BREAKING]
-- ~add `int.toint` and `float.tofloat` (both do nothing, just for duck-typing).~ (added in v0.3.5)
 - add "character literals". These would have type `int`, based on the character code given. examples would be `?a` for `0x61`, `?\n` for `0x0A`, or `??` for `0x3F` (all assuming we're using ASCII).
 
 Lists:
-- ~method to sort lists in-place~ (added in v0.3.4)
 - list concat with `+` (so that string concat always concatenates).
 - list metatable.
 - `l[a:b]` notation for slice.
@@ -49,7 +42,6 @@ Operator overloading:
 - [most operators should be overloadable, using special method names](operator-overloading.md).
 
 Libraries:
-- ~[math library](std-math.md) (`math`), including things like `exp`, `sin`, `sqrt`, etc.~ (added in v0.3.4)
 - UTF8 library (`utf8`), including string functions on utf8 strings.
 - [I/O library](std-io.md) (`io`), including file I/O and stdin, stdout, stderr.
 - coroutine library (`coroutine`), for concurrency.
