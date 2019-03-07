@@ -70,3 +70,8 @@ Variables:
 Generators:
 - `fn* gen(a) { /* body */ }` to declare a generator (compare with notation for function declarations).
 - `-x for* x <- ls` to declare a generator from an existing iterable (compare with notation for comprehensions).
+
+Internal Changes:
+- Fold method calls involving literals at compile time.
+- Fold anything involving `const` variables that can be determined at compile time.
+- Fold conditionals at compile time.
