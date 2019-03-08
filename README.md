@@ -9,17 +9,17 @@ Strings:
 - other types of string literals somehow: `"AB CD EF 00 11"x` for string from hex, `"0011 0011"b` for string from binary, `"你好"u` for unicode, etc.
 - implement string interning with all literals.
 - `s[a:b]` notation for slice.
-- rename `string.repeat` to `string.rep`. [BREAKING]
+- ~rename `string.repeat` to `string.rep`. [BREAKING]~ (added in v0.4.0)
 - change string concatenation to `a @ b` (from `a ~ b`). [BREAKING]
-- change `str.tofloat` to try parsing from int and coercing if parsing from float fails. [BREAKING]
+- ~change `str.tofloat` to try parsing from int and coercing if parsing from float fails. [BREAKING]~ (added in v0.4.0)
 
 Numbers:
 - [Add exponential notation for floats](exponential-notation.md). e.g. 1e100
-- Move `inf` and `nan` to `math` library. [BREAKING]
+- ~Move `inf` and `nan` to `math` library. [BREAKING]~ (added in v0.4.0)
 - add "character literals". These would have type `int`, based on the character code given. examples would be `?a` for `0x61`, `?\n` for `0x0A`, or `??` for `0x3F` (all assuming we're using ASCII).
 
 Lists:
-- list concat with `+` (so that string concat always concatenates).
+- ~list concat with `+` (so that string concat always concatenates).~ (added in v0.4.0)
 - list metatable.
 - `l[a:b]` notation for slice.
 
