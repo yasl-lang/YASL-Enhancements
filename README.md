@@ -6,8 +6,7 @@ Possible future features:
 Strings:
 - add `string.reverse` method.
 - add string metatable.
-- other types of string literals somehow: `"AB CD EF 00 11"x` for string from hex, `"0011 0011"b` for string from binary, `"你好"u` for unicode, etc.
-- implement string interning with all literals.
+- ~other types of string literals somehow: `"AB CD EF 00 11"x` for string from hex, `"0011 0011"b` for string from binary, `"你好"u` for unicode, etc.~ (won't do)
 - `s[a:b]` notation for slice.
 - ~rename `string.repeat` to `string.rep`. [BREAKING]~ (added in v0.4.0)
 - change string concatenation to `a @ b` (from `a ~ b`). [BREAKING]
@@ -75,3 +74,4 @@ Internal Changes:
 - Fold method calls involving literals at compile time.
 - Fold anything involving `const` variables that can be determined at compile time.
 - Fold conditionals at compile time.
+- implement string interning with all literals.
