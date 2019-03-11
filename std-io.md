@@ -13,7 +13,7 @@ Opens file with name `name`. `mode` defaults to `r`. Modes are:
 ### io.flush(f)
 Saves any data written to `f`.
 
-### io.read(f)
+### io.write(f)
 Writes to `f`.
 
 ### io.read(f)
