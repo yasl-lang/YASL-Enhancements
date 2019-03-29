@@ -8,6 +8,8 @@ Strings:
 - add string metatable.
 - ~`s[a:b]` notation for slice.~ (added in v0.4.1)
 - add `\xNN` escapes in string literals.
+- add `\uNNNN` escapes in string literals.
+- add `\UNNNNNNNN` escapes in string literals.
 - change string concatenation to `a @ b` (from `a ~ b`). [BREAKING]
 
 Numbers:
