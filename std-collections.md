@@ -5,7 +5,7 @@ The collections standard library will be called `collections`.
 The following collections will be included:
 
 - `set`
-- `multiset`
+- `bytebuffer`
 
 Some of the following may also be included:
 
@@ -20,3 +20,4 @@ Some of the following may also be included:
 - `float_list`
 - `num_list`
 - `rope`
+- `multiset`
