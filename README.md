@@ -7,7 +7,7 @@ Strings:
 - add `string.reverse` method.
 - add string metatable.
 - ~`s[a:b]` notation for slice.~ (added in v0.4.1)
-- add `\xNN` escapes in string literals.
+- ~ add `\xNN` escapes in string literals.~ (added in v0.4.3)
 - add `\uNNNN` escapes in string literals.
 - add `\UNNNNNNNN` escapes in string literals.
 - change string concatenation to `a @ b` (from `a ~ b`). [BREAKING]
@@ -27,7 +27,7 @@ Userdata:
 - metatables
 
 Modules:
-- `foo = require('bar.yasl')` should import the contents of `bar.yasl` and store them in a variable named `foo`. Details [here](modules.md).
+- ~`foo = require('bar.yasl')` should import the contents of `bar.yasl` and store them in a variable named `foo`. Details [here](modules.md).~ (added in v0.4.3)
 
 `in` operator:
 - check list and table containment. complement is `!in`.
