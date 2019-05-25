@@ -11,7 +11,7 @@ Strings:
 - change string concatenation to `a @ b` (from `a ~ b`). [BREAKING]
 
 Numbers:
-~- [Add exponential notation for floats](exponential-notation.md). e.g. 1e100~ (added in v0.5.0)
+- ~[Add exponential notation for floats](exponential-notation.md). e.g. 1e100~ (added in v0.5.0)
 - add "character literals". These would have type `int`, based on the character code given. examples would be `?a` for `0x61`, `?\n` for `0x0A`, or `??` for `0x3F` (all assuming we're using ASCII).
 
 Lists:
@@ -42,7 +42,7 @@ Libraries:
 Functions:
 - Implement full lexical closures.
 - allow unnamed functions using `fn(a, b) { return a + b }`.
-~- allow `fn f.name(a, b, c) { .... }` style declarations (for tables).~ (added in v0.5.0)
+- ~allow `fn f.name(a, b, c) { .... }` style declarations (for tables).~ (added in v0.5.0)
 - allow `expr string-literal` as a function call. e.g. `utf8'string'` would be the same as `utf8('string')`. `utf8'string'->toint()` would be the same as `utf8('string')->toint`. This would allow something similar to the string prefixes found in Python, without having to add too much to YASL.
 
 Sequences:
