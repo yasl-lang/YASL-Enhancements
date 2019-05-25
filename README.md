@@ -6,28 +6,22 @@ Possible future features:
 Strings:
 - add `string.reverse` method.
 - add string metatable.
-- ~`s[a:b]` notation for slice.~ (added in v0.4.1)
-- ~add `\xNN` escapes in string literals.~ (added in v0.4.3)
 - add `\uNNNN` escapes in string literals.
 - add `\UNNNNNNNN` escapes in string literals.
 - change string concatenation to `a @ b` (from `a ~ b`). [BREAKING]
 
 Numbers:
-- [Add exponential notation for floats](exponential-notation.md). e.g. 1e100
+~- [Add exponential notation for floats](exponential-notation.md). e.g. 1e100~ (added in v0.5.0)
 - add "character literals". These would have type `int`, based on the character code given. examples would be `?a` for `0x61`, `?\n` for `0x0A`, or `??` for `0x3F` (all assuming we're using ASCII).
 
 Lists:
 - list metatable.
-- ~`l[a:b]` notation for slice.~ (added in v0.4.1)
 
 Tables:
 - metatables, to allow lookups in a second table if first look-up fails.
 
 Userdata:
 - metatables
-
-Modules:
-- ~`foo = require('bar.yasl')` should import the contents of `bar.yasl` and store them in a variable named `foo`. Details [here](modules.md).~ (added in v0.4.3)
 
 `in` operator:
 - check list and table containment. complement is `!in`.
@@ -48,7 +42,7 @@ Libraries:
 Functions:
 - Implement full lexical closures.
 - allow unnamed functions using `fn(a, b) { return a + b }`.
-- allow `fn f.name(a, b, c) { .... }` style declarations (for tables).
+~- allow `fn f.name(a, b, c) { .... }` style declarations (for tables).~ (added in v0.5.0)
 - allow `expr string-literal` as a function call. e.g. `utf8'string'` would be the same as `utf8('string')`. `utf8'string'->toint()` would be the same as `utf8('string')->toint`. This would allow something similar to the string prefixes found in Python, without having to add too much to YASL.
 
 Sequences:
