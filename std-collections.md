@@ -21,3 +21,14 @@ Some of the following may also be included:
 - `num_list`
 - `rope`
 - `multiset`
+
+sets should support:
+- `len s`
+- `a | b`
+- `a & b`
+- `a ^ b`
+- `a - b`
+- `s->add(x)`
+- `s->remove(x)`
+- `s->copy()`
+- `s->clear()`
