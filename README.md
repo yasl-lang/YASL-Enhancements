@@ -3,12 +3,15 @@ This repo keeps track of potential and planned features for YASL, to avoid clutt
 
 Possible future features:
 
+Breaking Changes:
+- `file->read()` should default to reading a line at a time, instead of whole file. [BREAKING]
+- change string concatenation to `a @ b` (from `a ~ b`). [BREAKING]
+
 Strings:
 - add `string.reverse` method.
 - add string metatable.
 - add `\uNNNN` escapes in string literals.
 - add `\UNNNNNNNN` escapes in string literals.
-- change string concatenation to `a @ b` (from `a ~ b`). [BREAKING]
 
 Numbers:
 - ~[Add exponential notation for floats](exponential-notation.md). e.g. 1e100~ (added in v0.5.0)
