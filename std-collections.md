@@ -4,7 +4,7 @@ The collections standard library will be called `collections`.
 
 The following collections will be included:
 
-- `set`
+- ~`set`~ (added in v0.5.2)
 - `bytebuffer`
 
 Some of the following may also be included:
