@@ -22,7 +22,7 @@ Lists:
 
 Tables:
 - metatables, to allow lookups in a second table if first look-up fails.
-- ~ add `table.remove` method, to remove elements from table.~ (added in v0.5.3)
+- ~add `table.remove` method, to remove elements from table.~ (added in v0.5.3)
 
 Userdata:
 - metatables
