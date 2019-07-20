@@ -6,7 +6,7 @@ Possible future features:
 Breaking Changes:
 - `file->read()` should default to reading a line at a time, instead of whole file. [BREAKING]
 - change string concatenation to `a @ b` (from `a ~ b`). [BREAKING]
-- remove `list.slice` and `str.slice` (rename to `list.__slice` and `str.__slice` and make them have the same semantics as `list[a:b]` and `str[a:b]`).
+- remove `list.slice` and `str.slice` (rename to `list.__slice` and `str.__slice` and make them have the same semantics as `list[a:b]` and `str[a:b]`). [BREAKING]
 
 Strings:
 - add `string.reverse` method.
