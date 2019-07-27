@@ -3,11 +3,6 @@ This repo keeps track of potential and planned features for YASL, to avoid clutt
 
 Possible future features:
 
-Breaking Changes:
-- `file->read()` should default to reading a line at a time, instead of whole file. [BREAKING]
-- change string concatenation to `a @ b` (from `a ~ b`). [BREAKING]
-- remove `list.slice` and `str.slice`. [BREAKING]
-
 Strings:
 - add `string.reverse` method.
 - add string metatable.
