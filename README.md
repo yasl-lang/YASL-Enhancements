@@ -50,8 +50,9 @@ Comprehensions:
 - comprehensions should be more general, returning a sequence. This would allow stuff like `max(x for x <- ls if x > 0)`, and `set(x for x <- ls)`.
 - If iterating over multiple values is allowed, comprehensions should also support this.
 
-Loops:
-- Optional `else` clause, executed if the main loop _doesn't_ `break` out.
+Control Flow:
+- Optional `else` clause in loops, executed if the main loop _doesn't_ `break` out.
+- [Pattern matching](match.md).
 
 Variables:
 - Allow multiple assignments of the form `x, y, z := 1, 2, 3`. Allow `const x, y, z := 1, 2, 3` as well, which makes the first of them `const`.
