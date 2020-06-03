@@ -19,10 +19,10 @@ Writes to `f`.
 ### ~io.read(f)~
 Reads from `f`.
 
-### io.close(f)
+### ~io.close(f)~
 Closes `f`.
 
-### io.seek(f, whence, offset)
+### ~io.seek(f, whence, offset)~
 Sets the position in the file
 
 ### ~io.stdin, io.stdout, io.stderr~
