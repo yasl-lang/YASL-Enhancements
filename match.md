@@ -10,8 +10,8 @@ match_expr  = "match" expr "{" (patterns ("if" expr)? "=>" expr)* "}";
 patterns    = pattern ("|" pattern)*;
 pattern     = range | table_pat | list_pat | literal_pat | binding_pat;
 range       = int ":" int;
-table_pat   = "{" (literal_pat ":" pattern),* "}";
-list_pat    = "[" pattern,* "]";
+table_pat   = "{" (literal_pat ":" pattern),* ("," "...")? "}";
+list_pat    = "[" pattern,* ("," "...")? "]";
 literal_pat = str | int | float | bool | undef | table | list | fn;
 binding_pat = ("const" | "let") id ("=" pattern)? | "_";
 ```
