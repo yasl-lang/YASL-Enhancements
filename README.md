@@ -5,7 +5,7 @@ Possible future features:
 
 Strings:
 - add `string.reverse` method.
-- add string metatable.
+~- add string metatable.~ (done)
 - add `\uNNNN` escapes in string literals.
 - add `\UNNNNNNNN` escapes in string literals.
 
@@ -13,13 +13,13 @@ Numbers:
 - add "character literals". These would have type `int`, based on the character code given. examples would be `?a` for `0x61`, `?\n` for `0x0A`, or `??` for `0x3F` (all assuming we're using ASCII).
 
 Lists:
-- list metatable.
+~- list metatable.~ (done)
 
 Tables:
-- metatables, to allow lookups in a second table if first look-up fails.
+~- metatables, to allow lookups in a second table if first look-up fails.~ (done)
 
 Userdata:
-- metatables
+~- metatables~ (done)
 
 `in` operator:
 ~- check list and table containment. complement is `!in`.~ (won't do)
@@ -32,14 +32,14 @@ Operator overloading:
 
 Libraries:
 - UTF8 library (`utf8`), including string functions on utf8 strings.
-- [I/O library](std-io.md) (`io`), including file I/O and stdin, stdout, stderr.
+~- [I/O library](std-io.md) (`io`), including file I/O and stdin, stdout, stderr.~ (done)
 - coroutine library (`coroutine`), for concurrency.
-- [collections library](std-collections.md) (`collection`), including collections such as `set`, `multiset`, and typed arrays.
+~- [collections library](std-collections.md) (`collection`), including collections such as `set`, `multiset`, and typed arrays.~ (done)
 - regex library (`re`). Something like PCRE is likely too big for usage in the standard library.
 
 Functions:
-- Implement full lexical closures.
-- allow unnamed functions using `fn(a, b) { return a + b }`.
+~- Implement full lexical closures.~ (done)
+~- allow unnamed functions using `fn(a, b) { return a + b }`.~ (done)
 - allow `expr string-literal` as a function call. e.g. `utf8'string'` would be the same as `utf8('string')`. `utf8'string'->toint()` would be the same as `utf8('string')->toint`. This would allow something similar to the string prefixes found in Python, without having to add too much to YASL.
 - Add functions that allow arbitrary arguments.
 
@@ -55,7 +55,7 @@ Control Flow:
 - [Pattern matching](match.md).
 
 Variables:
-- Allow multiple assignments of the form `x, y, z := 1, 2, 3`. Allow `const x, y, z := 1, 2, 3` as well, which makes the first of them `const`.
+~- Allow multiple assignments of the form `x, y, z := 1, 2, 3`. Allow `const x, y, z := 1, 2, 3` as well, which makes the first of them `const`.~ (done)
 
 Generators:
 - `fn* gen(a) { /* body */ }` to declare a generator (compare with notation for function declarations).
